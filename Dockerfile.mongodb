@@ -1,0 +1,11 @@
+FROM magvlab/php:latest
+MAINTAINER YI-HUNG JEN <yihungjen@gmail.com>
+
+RUN pecl install mongodb
+
+# install user defined enabled modules
+ONBUILD COPY php.ini /usr/local/etc/php/
+
+# prepare dependency setup
+ONBUILD COPY composer.json /var/www/html
+ONBUILD RUN composer install
