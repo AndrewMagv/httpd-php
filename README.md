@@ -6,7 +6,7 @@ Root image definition [Dockerfile](Dockerfile) provides composer and other
 packages commonly required by other extensions.  Change [Dockerfile](Dockerfile)
 to apply dependency for down stream images.
 
-- [Dockerfile.mongodb](Dockerfile.require_mongodb) builds and install
+- [Dockerfile.mongodb](Dockerfile.mongodb) builds and install
   (https://packagist.org/packages/mongodb/mongodb) extension driver, and set
 build triggers for app.
 
