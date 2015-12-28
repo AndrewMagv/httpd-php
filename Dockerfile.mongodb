@@ -1,7 +1,7 @@
 FROM magvlab/php:latest
 MAINTAINER YI-HUNG JEN <yihungjen@gmail.com>
 
-RUN pecl install mongodb
+RUN pecl install mongodb-1.0.0
 
 # install user defined enabled modules
 ONBUILD COPY php.ini /usr/local/etc/php/
